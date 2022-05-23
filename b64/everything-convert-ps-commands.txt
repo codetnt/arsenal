@@ -1,0 +1,98 @@
+PowerShell – Base64 Encoding
+by shelladmin
+https://shellgeek.com/powershell-base64-encoding/
+
+
+* Convert file to Base64 string format
+
+https://docs.microsoft.com/en-us/previous-versions/troubleshoot/winautomation/process-development-tips/text-manipulation/convert-file-to-base64-string-format
+二进制文件转换为base64文本：
+[convert]::ToBase64String((Get-Content -path "your_file_path" -Encoding byte))
+
+
+https://stackoverflow.com/questions/35334928/convert-base64-string-to-file
+还原：
+$b64      = 'AAAAAA...'
+$filename = 'C:\path\to\file'
+
+$bytes = [Convert]::FromBase64String($b64)
+[IO.File]::WriteAllBytes($filename, $bytes)
+
+
+还原：
+[IO.File]::WriteAllBytes("e01.7z",  [Convert]::FromBase64String(  (Get-Content -path "e01.txt") ))
+
+
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.001" -Encoding byte)) > e01.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.002" -Encoding byte)) > e02.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.003" -Encoding byte)) > e03.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.004" -Encoding byte)) > e04.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.005" -Encoding byte)) > e05.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.006" -Encoding byte)) > e06.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.007" -Encoding byte)) > e07.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.008" -Encoding byte)) > e08.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.009" -Encoding byte)) > e09.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.010" -Encoding byte)) > e10.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.011" -Encoding byte)) > e11.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.012" -Encoding byte)) > e12.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.013" -Encoding byte)) > e13.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.014" -Encoding byte)) > e14.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.015" -Encoding byte)) > e15.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.016" -Encoding byte)) > e16.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.017" -Encoding byte)) > e17.txt
+
+[convert]::ToBase64String((Get-Content -path "Everything-1.4.1.1015.x64-Setup.7z.018" -Encoding byte)) > e18.txt
+[convert]::ToBase64String((Get-Content -path "your_file_path" -Encoding byte))
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.001" -Encoding byte)) > e01.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.002" -Encoding byte)) > e02.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.003" -Encoding byte)) > e03.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.004" -Encoding byte)) > e04.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.005" -Encoding byte)) > e05.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.006" -Encoding byte)) > e06.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.007" -Encoding byte)) > e07.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.008" -Encoding byte)) > e08.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.009" -Encoding byte)) > e09.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.010" -Encoding byte)) > e10.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.001" -Encoding byte)) > e01.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.001" -Encoding byte)) > e01.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.001" -Encoding byte)) > e01.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.001" -Encoding byte)) > e01.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.001" -Encoding byte)) > e01.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.001" -Encoding byte)) > e01.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.001" -Encoding byte)) > e01.txt
+
+[convert]::ToBase64String((Get-Content -path "‪Everything-1.4.1.1015.x64-Setup.7z.001" -Encoding byte)) > e01.txt
